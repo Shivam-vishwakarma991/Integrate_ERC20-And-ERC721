@@ -10,6 +10,6 @@ contract MyErc20Token is ERC20{
     //Mint ERC20 token with this function
 
     function mint(address minter, uint amount) public{
-        _mint(minter, amount);
+        _mint(minter, amount* (10**18));
     }
 }
